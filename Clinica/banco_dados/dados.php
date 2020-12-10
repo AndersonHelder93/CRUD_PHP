@@ -4,6 +4,7 @@
     $username = "root";
     $password = "";
     $bdname = "pacientes";
+    
 
     //pdo -> abstração para acessar qualquer banco de dados (postgree, workbench,oracle, etc..)
     // caminho -> mysql://localhost:3306/dados_pessoais

@@ -21,6 +21,7 @@
                     <th>PESO</th>
                     <th>ALTURA</th>
                     <th>IDADE</th>
+                    <th>IMC</th>
                 </tr>
                 <footer>
                 <div>
