@@ -1,2 +1,2 @@
 # CRUD_PHP
-CRUD Básico para clinicas
+CRUD Básico para clínicas
