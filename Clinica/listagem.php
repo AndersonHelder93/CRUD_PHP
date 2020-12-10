@@ -20,6 +20,7 @@
                     <th>CPF</th>
                     <th>PESO</th>
                     <th>ALTURA</th>
+                    <th>ANO</th>
                     <th>IDADE</th>
                     <th>IMC</th>
                 </tr>

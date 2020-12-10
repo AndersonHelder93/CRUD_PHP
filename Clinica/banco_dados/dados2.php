@@ -46,12 +46,16 @@ function listagem ($conexao){  //função, nome definido pelo desenvolvedor.
         $alturapac = $paciente['altura'];
         $alturapac2 = $alturapac*$alturapac;
         $imc = $pesopac/$alturapac2;
+        $nascimento = $paciente['idade'];
+        $ano = 2020;
+        $idade = ($ano-$nascimento);
 
         echo "<tr><td> {$paciente['nome']}</td>" ;
         echo "<td> {$paciente['cpf']}</td>" ;
         echo "<td> {$paciente['peso']}</td>" ;
         echo "<td> {$paciente['altura']}</td>" ;
         echo "<td> {$paciente['idade']}</td>";
+        echo "<td> $idade </td>";
         echo "<td> $imc </td></tr>";
     } 
     mysqli_close($conexao);
