@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="pagina1.css">
+        <title>Cadastro de Pacientes</title>
+    </head>
+    <body class="fundo" >
+        <form method="POST" action="banco_dados/dados2.php"> 
+            <br>
+                <legend> Preencha os Campos Abaixo: </legend>
+                </br>
+                <div>
+                    <input type="text" placeholder="Nome Completo" name="nome" required>
+                </div>
+                </br>
+                <div>
+                    <input type="number" placeholder="Matrícula" name="matricula" required>
+                </div>
+                </br>
+                <div>
+                    <input type="email" placeholder="E-mail"  name="email" required>
+                </div>
+                </br>
+                <div>
+                    <input type="text" placeholder="Cargo" name= "cargo" required>
+                </div>
+                </br>
+                <div>
+                    <input type="password" placeholder="Senha" name= "senha" required>
+                </div>
+                </br>
+                <div>
+                    <input type="password" placeholder="Confirme a Senha" name= "confirmar" required>
+                </div>
+                </br>
+            <div>
+            <button type="submit" name="empregado">Cadastrar</button>
+            </div>
+        </form>
+    </body>
+</html>
