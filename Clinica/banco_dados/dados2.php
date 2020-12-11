@@ -24,13 +24,14 @@ function cadastro_clientes($conexao){
     $altura = $_POST['altura'];
 
 
-    $stmt = "INSERT INTO dados_pessoais (cpf, nome, idade, peso, altura) VALUES ('{$cpf}','{$nome}','{$idade}','{$peso}','{$altura}','{$imc}')";
+    $stmt = "INSERT INTO dados_pessoais (cpf, nome, idade, peso, altura) VALUES ('{$cpf}','{$nome}','{$idade}','{$peso}','{$altura}')";
     mysqli_query($conexao, $stmt);
     if (mysqli_affected_rows($conexao) > 0) {
         echo "Adicionado com sucesso!";
         header("Location:../sucesso.html");
     } else {
         echo "Erro ao adicionar ao banco de dados do cliente!";
+        header("Location:../erro.html");
         
     }
     mysqli_close($conexao);
